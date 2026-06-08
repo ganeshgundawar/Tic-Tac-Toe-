@@ -60,6 +60,7 @@ function check() {
                 updateResult.style.color="#38BDF8"
             }
             showresult.style.display = "flex";
+            setTimeout(reset,5000);
         }
     }
     for (let q = 0; q < 3; q++) {
@@ -80,6 +81,7 @@ function check() {
                 updateResult.style.color="#38BDF8"
             }
             showresult.style.display = "flex";
+            setTimeout(reset,5000);
         }
     }
     if (((result[0][0]===result[1][1] ) && (result[1][1]===result[2][2]) &&(result[0][0]!=0))||((result[1][1]===result[2][0]) && (result[1][1]===result[0][2]) && (result[0][2]!=0)))
@@ -94,9 +96,11 @@ function check() {
             updateResult.style.color="#38BDF8"
            }
         showresult.style.display='flex';
+        setTimeout(reset,5000);
     }
     if (n === 9) {
         showresult.style.display = "flex";
+        setTimeout(reset,5000);
     }
 }
 function reset() {
